@@ -16,7 +16,7 @@ service User {
   rpc GetUser(GetUserReq) returns(GetUserRes);
 }
 message GetUserReq {
-  string Username = 1;
+  int64 Userid = 1;
 }
 message GetUserRes {
  UserInfo Data = 1;
